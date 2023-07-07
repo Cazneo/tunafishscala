@@ -76,13 +76,13 @@ object Main extends JFXApp3 {
 
     val timeline = new Timeline {
       cycleCount = Timeline.Indefinite
-      keyFrames = KeyFrame(Duration(500), onFinished = event => updateWorld())
+      keyFrames = KeyFrame(Duration(500), onFinished = event => update())
     }
 
     timeline.play()
   }
 
-  def updateWorld(): Unit = {
+  def update(): Unit = {
     val oldGrid = grid.map(array => array.clone())
 
     oldGrid.indices.foreach { index1 =>
