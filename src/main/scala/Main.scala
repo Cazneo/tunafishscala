@@ -32,7 +32,7 @@ object Main extends JFXApp3 {
 
   override def start(): Unit = {
     stage = new JFXApp3.PrimaryStage {
-      title.value = "WaTor"
+      title.value = "tunafishscala"
       scene = new Scene(500, 500) {
         content = for (i <- 0 until 50; j <- 0 until 50) yield {
           val rectangle = new Rectangle {
